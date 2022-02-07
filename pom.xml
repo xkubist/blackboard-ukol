@@ -57,6 +57,12 @@
                 <directory>${project.basedir}/src/main/resources/web/dist/web</directory>
                 <targetPath>META-INF/resources</targetPath>
             </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
         </resources>
 
         <plugins>
