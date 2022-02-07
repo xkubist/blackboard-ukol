@@ -1,0 +1,31 @@
+<div class="h-100 d-flex justify-content-center bg-purple">
+  <div class="container align-self-center">
+    <form class="form" [formGroup]="form">
+      <div class="custom-border">
+        <div class="input-group">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Enter a Url to shorten"
+            id="fullLink"
+            formControlName="fullLink"
+            #userinput>
+          <button *ngIf='isShortened' type="button" class="btn bg-transparent"
+                  style="margin-left: -40px; z-index: 100;">
+            <i (click)="close()" *ngIf="isShortened" class="bi bi-x close"></i>
+          </button>
+          <button *ngIf='!isShortened' type="button" class="btn btn-success" (click)="onSubmit()">
+            Shorten
+          </button>
+          <button *ngIf='isShortened' type="button" class="btn btn-success" (click)="copy(userinput.value)">
+            Copy
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
