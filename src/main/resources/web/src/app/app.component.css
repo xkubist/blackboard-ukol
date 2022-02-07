@@ -2,15 +2,6 @@
   background-color: #220023;
 }
 
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  padding: 10px 5px;
-  transform: translate(0%, -50%);
-}
-
 .custom-border{
   border-radius: 1px;
   background-color: rgba(255,255,255,0.3);
